@@ -1,0 +1,976 @@
+2024-02-29 12:28:39.390 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.1.Final
+2024-02-29 12:28:39.492 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Starting UserTaskApplication using Java 20.0.2 with PID 19348 (C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask\target\classes started by sainath.a in C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask)
+2024-02-29 12:28:39.493 [restartedMain] DEBUG c.e.UserTask.UserTaskApplication - Running with Spring Boot v3.1.9, Spring v6.0.17
+2024-02-29 12:28:39.495 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-29 12:28:39.635 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-29 12:28:39.635 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-29 12:28:42.092 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-29 12:28:42.283 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 174 ms. Found 3 JPA repository interfaces.
+2024-02-29 12:28:44.706 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-29 12:28:44.721 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:28:44.726 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-29 12:28:44.726 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-02-29 12:28:44.836 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-29 12:28:44.837 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5199 ms
+2024-02-29 12:28:45.397 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-29 12:28:45.494 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.22.Final
+2024-02-29 12:28:45.499 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-02-29 12:28:46.545 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-29 12:28:46.600 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-02-29 12:28:47.222 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ec33b17
+2024-02-29 12:28:47.227 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-02-29 12:28:48.857 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-29 12:28:48.936 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:28:49.846 [restartedMain] DEBUG c.e.UserTask.filter.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-02-29 12:28:50.309 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-29 12:28:52.250 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-29 12:28:53.081 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-29 12:28:53.256 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@485e4a45, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45accdbc, org.springframework.security.web.context.SecurityContextHolderFilter@43f3ca5, org.springframework.security.web.header.HeaderWriterFilter@4b4e3425, org.springframework.security.web.authentication.logout.LogoutFilter@223e6ac2, com.example.UserTask.filter.JwtAuthFilter@4aa856ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@297921bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17c8ad8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52262b8, org.springframework.security.web.session.SessionManagementFilter@63a175d3, org.springframework.security.web.access.ExceptionTranslationFilter@6b422ac9, org.springframework.security.web.access.intercept.AuthorizationFilter@36b77913]
+2024-02-29 12:28:54.028 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-02-29 12:28:54.137 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:28:54.183 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-29 12:28:54.223 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Started UserTaskApplication in 15.61 seconds (process running for 17.406)
+2024-02-29 12:29:07.528 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:29:07.533 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-29 12:29:07.551 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-02-29 12:33:23.069 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.1.Final
+2024-02-29 12:33:23.127 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Starting UserTaskApplication using Java 20.0.2 with PID 18452 (C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask\target\classes started by sainath.a in C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask)
+2024-02-29 12:33:23.127 [restartedMain] DEBUG c.e.UserTask.UserTaskApplication - Running with Spring Boot v3.1.9, Spring v6.0.17
+2024-02-29 12:33:23.128 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-29 12:33:23.192 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-29 12:33:23.192 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-29 12:33:25.209 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-29 12:33:25.291 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+2024-02-29 12:33:26.640 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-29 12:33:26.654 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:33:26.657 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-29 12:33:26.659 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-02-29 12:33:26.816 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-29 12:33:26.817 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3624 ms
+2024-02-29 12:33:27.299 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-29 12:33:27.391 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.22.Final
+2024-02-29 12:33:27.395 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-02-29 12:33:27.943 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-29 12:33:28.085 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-02-29 12:33:28.654 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e2c77c2
+2024-02-29 12:33:28.658 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-02-29 12:33:30.038 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-29 12:33:30.089 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:33:30.622 [restartedMain] DEBUG c.e.UserTask.filter.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-02-29 12:33:30.818 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-29 12:33:31.685 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-29 12:33:32.312 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-29 12:33:32.416 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a03cd18, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d98b9e1, org.springframework.security.web.context.SecurityContextHolderFilter@26e72440, org.springframework.security.web.header.HeaderWriterFilter@16d8fc09, org.springframework.security.web.authentication.logout.LogoutFilter@722601ad, com.example.UserTask.filter.JwtAuthFilter@52221568, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@217b46b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76470e92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67b45b2, org.springframework.security.web.session.SessionManagementFilter@3a3600c2, org.springframework.security.web.access.ExceptionTranslationFilter@454fd162, org.springframework.security.web.access.intercept.AuthorizationFilter@7e813da4]
+2024-02-29 12:33:33.119 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-02-29 12:33:33.216 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:33:33.243 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-29 12:33:33.271 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Started UserTaskApplication in 10.595 seconds (process running for 11.621)
+2024-02-29 12:35:03.727 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-29 12:35:03.728 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-29 12:35:03.731 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-02-29 12:35:03.911 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:35:03.911 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:35:03.986 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:35:03.986 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:35:21.553 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:35:21.553 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:35:21.588 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:35:21.588 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:35:51.743 [http-nio-8080-exec-5] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:35:51.743 [http-nio-8080-exec-5] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:35:52.086 [http-nio-8080-exec-6] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:35:52.086 [http-nio-8080-exec-6] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:36:11.218 [http-nio-8080-exec-7] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:36:11.219 [http-nio-8080-exec-7] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:36:11.256 [http-nio-8080-exec-8] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:36:11.256 [http-nio-8080-exec-8] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:36:15.324 [http-nio-8080-exec-9] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:36:15.324 [http-nio-8080-exec-9] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:36:15.355 [http-nio-8080-exec-10] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:36:15.355 [http-nio-8080-exec-10] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:41:07.085 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:41:07.085 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:41:07.157 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:41:07.157 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:47:24.509 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:47:24.517 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-29 12:47:24.526 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-02-29 12:47:37.812 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.1.Final
+2024-02-29 12:47:37.877 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Starting UserTaskApplication using Java 20.0.2 with PID 12192 (C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask\target\classes started by sainath.a in C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask)
+2024-02-29 12:47:37.878 [restartedMain] DEBUG c.e.UserTask.UserTaskApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2024-02-29 12:47:37.879 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-29 12:47:37.947 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-29 12:47:37.947 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-29 12:47:39.771 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-29 12:47:39.957 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 165 ms. Found 3 JPA repository interfaces.
+2024-02-29 12:47:41.609 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-29 12:47:41.628 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:47:41.630 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-29 12:47:41.631 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-02-29 12:47:41.767 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-29 12:47:41.768 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3820 ms
+2024-02-29 12:47:42.291 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-29 12:47:42.398 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-02-29 12:47:42.905 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-02-29 12:47:43.366 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3515e4ee
+2024-02-29 12:47:43.368 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-02-29 12:47:43.454 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-02-29 12:47:44.839 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-29 12:47:44.856 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:47:45.488 [restartedMain] DEBUG c.e.UserTask.filter.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-02-29 12:47:46.312 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-29 12:47:47.869 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-29 12:47:48.095 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31e12438, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e64b3a7, org.springframework.security.web.context.SecurityContextHolderFilter@2677c8c8, org.springframework.security.web.header.HeaderWriterFilter@768f3e79, org.springframework.security.web.authentication.logout.LogoutFilter@3631f5c2, com.example.UserTask.filter.JwtAuthFilter@e30761, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1db79671, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56706ff9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24758a34, org.springframework.security.web.session.SessionManagementFilter@a93feec, org.springframework.security.web.access.ExceptionTranslationFilter@1858352b, org.springframework.security.web.access.intercept.AuthorizationFilter@5a24bbd8]
+2024-02-29 12:47:48.557 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-02-29 12:47:48.643 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:47:48.687 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-29 12:47:48.714 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Started UserTaskApplication in 11.446 seconds (process running for 12.466)
+2024-02-29 12:47:51.072 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-29 12:47:51.073 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-29 12:47:51.075 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-02-29 12:47:51.192 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:47:51.192 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:47:51.261 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:47:51.261 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:11.406 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:48:11.412 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-29 12:48:11.423 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-02-29 12:48:22.648 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.1.Final
+2024-02-29 12:48:22.713 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Starting UserTaskApplication using Java 20.0.2 with PID 12256 (C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask\target\classes started by sainath.a in C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask)
+2024-02-29 12:48:22.714 [restartedMain] DEBUG c.e.UserTask.UserTaskApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2024-02-29 12:48:22.715 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-29 12:48:22.787 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-29 12:48:22.788 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-29 12:48:24.906 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-29 12:48:25.035 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+2024-02-29 12:48:26.352 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-29 12:48:26.367 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:48:26.369 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-29 12:48:26.370 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-02-29 12:48:26.491 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-29 12:48:26.492 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3704 ms
+2024-02-29 12:48:27.063 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-29 12:48:27.148 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-02-29 12:48:27.541 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-02-29 12:48:27.915 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e8d797a
+2024-02-29 12:48:27.919 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-02-29 12:48:27.998 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-02-29 12:48:29.058 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-29 12:48:29.067 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:48:29.559 [restartedMain] DEBUG c.e.UserTask.filter.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-02-29 12:48:30.409 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-29 12:48:31.010 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-29 12:48:31.079 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47f13f7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28f51229, org.springframework.security.web.context.SecurityContextHolderFilter@12b8222d, org.springframework.security.web.header.HeaderWriterFilter@111f909a, org.springframework.security.web.authentication.logout.LogoutFilter@2e6734d4, com.example.UserTask.filter.JwtAuthFilter@2db7f543, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@454b98c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24ff1371, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e695eb8, org.springframework.security.web.session.SessionManagementFilter@22292e8e, org.springframework.security.web.access.ExceptionTranslationFilter@43777576, org.springframework.security.web.access.intercept.AuthorizationFilter@441d0766]
+2024-02-29 12:48:31.589 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-02-29 12:48:31.674 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:48:31.699 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-29 12:48:31.729 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Started UserTaskApplication in 9.491 seconds (process running for 10.543)
+2024-02-29 12:48:31.937 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-29 12:48:31.938 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-29 12:48:31.941 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-02-29 12:48:32.074 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:32.074 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:32.116 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:32.116 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:34.851 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:34.853 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:34.887 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:34.887 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:35.613 [http-nio-8080-exec-5] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:35.614 [http-nio-8080-exec-5] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:35.648 [http-nio-8080-exec-6] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:35.649 [http-nio-8080-exec-6] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:36.605 [http-nio-8080-exec-7] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:36.606 [http-nio-8080-exec-7] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:36.641 [http-nio-8080-exec-8] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:36.642 [http-nio-8080-exec-8] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:36.815 [http-nio-8080-exec-9] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:36.816 [http-nio-8080-exec-9] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:36.853 [http-nio-8080-exec-10] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:36.854 [http-nio-8080-exec-10] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:37.813 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:37.813 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:37.847 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:37.847 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:38.225 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:38.225 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:38.259 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:38.260 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:38.393 [http-nio-8080-exec-5] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:38.393 [http-nio-8080-exec-5] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:38.426 [http-nio-8080-exec-6] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:38.426 [http-nio-8080-exec-6] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:41.218 [http-nio-8080-exec-7] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:41.218 [http-nio-8080-exec-7] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:41.250 [http-nio-8080-exec-8] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:41.251 [http-nio-8080-exec-8] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:41.727 [http-nio-8080-exec-9] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:41.727 [http-nio-8080-exec-9] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:41.759 [http-nio-8080-exec-10] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:41.760 [http-nio-8080-exec-10] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:41.918 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:48:41.918 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:48:41.951 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:48:41.963 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:49:06.697 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:49:06.698 [http-nio-8080-exec-3] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:49:06.772 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:49:06.772 [http-nio-8080-exec-4] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:51:12.718 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:51:12.723 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-29 12:51:12.738 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-02-29 12:51:19.176 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.1.Final
+2024-02-29 12:51:19.237 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Starting UserTaskApplication using Java 20.0.2 with PID 7448 (C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask\target\classes started by sainath.a in C:\Users\Sainath.a\Desktop\SpringProjectFiles\UserTaskSwagger\UserTask)
+2024-02-29 12:51:19.237 [restartedMain] DEBUG c.e.UserTask.UserTaskApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2024-02-29 12:51:19.238 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-02-29 12:51:19.319 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-29 12:51:19.319 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-29 12:51:21.119 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-29 12:51:21.213 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2024-02-29 12:51:22.562 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-02-29 12:51:22.577 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:51:22.578 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-02-29 12:51:22.579 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-02-29 12:51:22.699 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-02-29 12:51:22.700 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3379 ms
+2024-02-29 12:51:23.206 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-29 12:51:23.278 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-02-29 12:51:23.727 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-02-29 12:51:24.284 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@199fa6
+2024-02-29 12:51:24.290 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-02-29 12:51:24.399 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-02-29 12:51:25.564 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-29 12:51:25.577 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 12:51:26.106 [restartedMain] DEBUG c.e.UserTask.filter.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-02-29 12:51:27.064 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-29 12:51:27.672 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-29 12:51:27.754 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d585f54, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dbc768c, org.springframework.security.web.context.SecurityContextHolderFilter@7785e489, org.springframework.security.web.header.HeaderWriterFilter@1975a358, org.springframework.security.web.authentication.logout.LogoutFilter@4aa266c9, com.example.UserTask.filter.JwtAuthFilter@7a3dae2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ea7d416, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29f3028, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59c4731d, org.springframework.security.web.session.SessionManagementFilter@790e23aa, org.springframework.security.web.access.ExceptionTranslationFilter@72a236fa, org.springframework.security.web.access.intercept.AuthorizationFilter@28f51229]
+2024-02-29 12:51:28.319 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-02-29 12:51:28.403 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-29 12:51:28.430 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-29 12:51:28.457 [restartedMain] INFO  c.e.UserTask.UserTaskApplication - Started UserTaskApplication in 9.86 seconds (process running for 10.887)
+2024-02-29 12:51:30.112 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-29 12:51:30.114 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-29 12:51:30.116 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-02-29 12:51:30.229 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /swagger-ui/index.html
+Headers: sec-fetch-mode: navigate
+sec-fetch-site: none
+accept-language: en-US,en
+sec-fetch-user: ?1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+upgrade-insecure-requests: 1
+connection: keep-alive
+cache-control: max-age=0
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: document
+
+Body: 
+2024-02-29 12:51:30.229 [http-nio-8080-exec-1] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 12:51:30.302 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Request URL: GET /favicon.ico
+Headers: sec-fetch-mode: no-cors
+referer: http://localhost:8080/swagger-ui/index.html
+sec-fetch-site: same-origin
+accept-language: en-US,en
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+sec-gpc: 1
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Brave";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+host: localhost:8080
+connection: keep-alive
+accept-encoding: gzip, deflate, br
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-fetch-dest: image
+
+Body: 
+2024-02-29 12:51:30.302 [http-nio-8080-exec-2] INFO  c.e.UserTask.filter.JwtAuthFilter - Response body: {"error": "Invalid session"}
+
+2024-02-29 13:28:10.066 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-29 13:28:10.073 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-02-29 13:28:10.084 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
