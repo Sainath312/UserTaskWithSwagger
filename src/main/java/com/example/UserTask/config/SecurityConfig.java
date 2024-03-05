@@ -26,10 +26,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
-public class SecurityConfig  {
+public class SecurityConfig {
 
     @Autowired
     JwtAuthFilter authFilter;
+
     @Bean
     //authentication
     public UserDetailsService userDetailsService() {
@@ -38,10 +39,14 @@ public class SecurityConfig  {
 
     @Bean //Configures the main security filter chain
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-       http.csrf()
+        http.csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/api/admin/**","/v3/api-docs/**","/swagger-ui/**").permitAll()
+                .requestMatchers("/api/admin/**", "/v3/api-docs/**", "/swagger-ui/**").permitAll()
+                .and()
+                .authorizeHttpRequests()
+                .requestMatchers("/api/user/**", "/api/admin/adminLogout")
+                .authenticated()
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -49,13 +54,10 @@ public class SecurityConfig  {
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling()
-                .authenticationEntryPoint(invalidSessionEntryPoint()) // Set the custom entry point
-                .and()
-                .authorizeHttpRequests()
-                .requestMatchers("/api/user/**","/api/admin/adminLogout")
-                .authenticated();
-       return http.build();
+                .authenticationEntryPoint(invalidSessionEntryPoint()); // Set the custom entry point
+        return http.build();
     }
+
     public AuthenticationEntryPoint invalidSessionEntryPoint() {
         return (request, response, authException) -> {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -64,18 +66,20 @@ public class SecurityConfig  {
             response.getWriter().write(StringConstants.ERROR);
         };
     }
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-    public AuthenticationProvider authenticationProvider(){
-        DaoAuthenticationProvider authenticationProvider=new DaoAuthenticationProvider();
+    public AuthenticationProvider authenticationProvider() {
+        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
         authenticationProvider.setUserDetailsService(userDetailsService());
         authenticationProvider.setPasswordEncoder(passwordEncoder());
         return authenticationProvider;
     }
+
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();

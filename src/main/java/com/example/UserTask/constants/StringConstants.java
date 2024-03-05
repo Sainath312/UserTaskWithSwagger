@@ -18,6 +18,7 @@ public class StringConstants {
     public static final String USER_FIRST_NAME ="User First Name cannot be blank";
     public static final String USER_LAST_NAME ="User Last Name cannot be blank";
     public static final String MAIL_REQUIRED ="Mail is required,it not be Empty";
+    public static final String VALID_KEYWORD ="Enter valid keyword and keyword length must be greater than 3";
     public static final String VALID_MAIL= "Email must be a Gmail address";
     public static final String MOBILE_NUMBER_REQUIRED= "Mobile is required and number can't be Empty";
     public static final String VALID_MOBILE_NUMBER= "Enter Valid India PhoneNumber";

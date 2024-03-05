@@ -89,10 +89,11 @@ public class UserServiceImpl implements UserService {
     }
 
 
-    public List<UserEntity> findByAnyDetail(SearchKeyword keyword) {
-        logger.info("allUsers found");
-        System.out.println("--------------------------------");
-        List<UserEntity> result = userRepository.findByAnyDetail(keyword.getKeyword());
+    public List<UserEntity> findByAnyDetail(String keyword) {
+        if (keyword.length() < 3) {
+            throw new NotFoundException(StringConstants.VALID_KEYWORD);
+        }
+        List<UserEntity> result = userRepository.findByAnyDetail(keyword);
         if (result.isEmpty()) {
             throw new NotFoundException(StringConstants.USER_NOT_PRESENT);
         }

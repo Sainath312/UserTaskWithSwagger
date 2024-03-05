@@ -42,6 +42,10 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 	protected void doFilterInternal(@NotNull HttpServletRequest request, @NotNull HttpServletResponse response, @NotNull FilterChain filterChain) throws ServletException, IOException {
 
 		try {
+//			if (request.getServletPath().contains("/api/user/**")){
+//				filterChain.doFilter(request, response);
+//				return;
+//			}
 			if (request.getServletPath().contains("/api/admin/**")) {
 				filterChain.doFilter(request, response);
 				return;

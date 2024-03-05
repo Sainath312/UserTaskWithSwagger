@@ -12,7 +12,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
 
 
 @OpenAPIDefinition(info = @Info(
-        description = "OpenApi documentation for Customer service",
+        description = "OpenApi documentation for User service",
         title = "Application Management Service",
         version = "1.0"),
         servers = {

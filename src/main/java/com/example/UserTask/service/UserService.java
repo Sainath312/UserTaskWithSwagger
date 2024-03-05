@@ -11,9 +11,7 @@ public interface UserService {
 
     Page<UserEntity> getUsers(Pageable pageable);
 
-    public UserEntity getUserById(Long id);
-
-
+    UserEntity getUserById(Long id);
 
     UserEntity getUserByName(SearchByName name);
 
@@ -23,5 +21,5 @@ public interface UserService {
 
     ResponseMessage deleteUser(Long id);
 
-    List<UserEntity> findByAnyDetail(SearchKeyword keyword);
+    List<UserEntity> findByAnyDetail(String keyword);
 }
