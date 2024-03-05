@@ -41,7 +41,7 @@ public class SecurityConfig  {
        http.csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/api/user/**","/api/admin/**","/v3/api-docs/**","/swagger-ui/**").permitAll()
+                .requestMatchers("/api/admin/**","/v3/api-docs/**","/swagger-ui/**").permitAll()
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -52,9 +52,8 @@ public class SecurityConfig  {
                 .authenticationEntryPoint(invalidSessionEntryPoint()) // Set the custom entry point
                 .and()
                 .authorizeHttpRequests()
-                .requestMatchers("/api/admin/adminLogout")
+                .requestMatchers("/api/user/**","/api/admin/adminLogout")
                 .authenticated();
-
        return http.build();
     }
     public AuthenticationEntryPoint invalidSessionEntryPoint() {

@@ -19,35 +19,14 @@ import java.util.Map;
 @RestControllerAdvice
 public class ExceptionHandlers {
 
-//    @ResponseStatus(HttpStatus.BAD_REQUEST)
-//    @ExceptionHandler(MethodArgumentNotValidException.class)
-//    public Map<String, String> handleEmpDetailsExceptions(MethodArgumentNotValidException ex) {
-//        Map<String, String> errorMap = new HashMap<>();
-//        ex.getBindingResult().getFieldErrors().forEach(error -> {
-//            errorMap.put(error.getField(), error.getDefaultMessage());
-//        });
-//        return errorMap;
-//    }
-
-
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public Map<String, Object> handleValidationException(MethodArgumentNotValidException ex, WebRequest request) {
-        String path = ((ServletWebRequest) request).getRequest().getRequestURI();
-
-        Map<String, Object> response = new HashMap<>();
-        response.put("path", path);
-        response.put("status", HttpStatus.BAD_REQUEST.value());
-
-        List<Map<String, String>> errors = new ArrayList<>();
+    public Map<String, String> handleEmpDetailsExceptions(MethodArgumentNotValidException ex) {
+        Map<String, String> errorMap = new HashMap<>();
         ex.getBindingResult().getFieldErrors().forEach(error -> {
-            Map<String, String> errorMap = new HashMap<>();
-            errorMap.put("field", error.getField());
-            errorMap.put("message", error.getDefaultMessage());
-            errors.add(errorMap);
+            errorMap.put(error.getField(), error.getDefaultMessage());
         });
-        response.put("errors", errors);
-        return response;
+        return errorMap;
     }
 
     @ExceptionHandler({NotFoundException.class})

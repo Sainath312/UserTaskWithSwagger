@@ -18,7 +18,6 @@ public class UserEntity {
     public long id;
 
     @Column(unique = true,nullable = false)
-    @NotBlank(message = StringConstants.USER_NAME)
     public String name;
 
     @Column(nullable = false)
@@ -28,11 +27,9 @@ public class UserEntity {
     public String lastName;
 
     @Column(unique = true,nullable = false)
-    @NotBlank(message = StringConstants.MAIL_REQUIRED)
     public String email;
 
     @Column(unique = true,nullable = false)
-    @NotBlank(message = StringConstants.MOBILE_NUMBER_REQUIRED)
     public String mobileNumber;
 
     public UserEntity(String name, String firstName, String lastName, String email, String mobileNumber) {

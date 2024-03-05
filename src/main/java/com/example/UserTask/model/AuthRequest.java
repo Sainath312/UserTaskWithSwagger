@@ -6,9 +6,14 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class AuthRequest {
 	@NotEmpty(message = StringConstants.ADMIN_NAME)
 	public String adminName;
@@ -22,4 +27,5 @@ public class AuthRequest {
 			@Pattern(regexp = ".*\\d.*", message = StringConstants.NUMERIC),
 			@Pattern(regexp = ".*[@#$%^&+=].*", message =StringConstants.SPECIAL_CHARACTER) })
 	public String password;
+
 }

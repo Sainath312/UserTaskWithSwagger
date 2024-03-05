@@ -16,7 +16,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
         title = "Application Management Service",
         version = "1.0"),
         servers = {
-                @Server(description = "LOCAL Environment", url = "http://localhost:8080")})
+        @Server(description = "LOCAL Environment", url = "http://localhost:8080")})
 @SecurityScheme(name = "bearerAuth", description = "JWT auth description", scheme = "bearer",
         type = SecuritySchemeType.HTTP,
         bearerFormat = "JWT",

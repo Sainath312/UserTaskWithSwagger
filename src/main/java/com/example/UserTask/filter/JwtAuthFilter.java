@@ -2,8 +2,6 @@ package com.example.UserTask.filter;
 
 
 import com.example.UserTask.constants.StringConstants;
-import com.example.UserTask.helper.Wrapper.LoggingHttpServletRequestWrapper;
-import com.example.UserTask.helper.Wrapper.ResponseWrapper;
 import com.example.UserTask.service.JwtService;
 import com.example.UserTask.service.UserInfoUserDetailsService;
 import io.jsonwebtoken.ExpiredJwtException;
@@ -44,10 +42,6 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 	protected void doFilterInternal(@NotNull HttpServletRequest request, @NotNull HttpServletResponse response, @NotNull FilterChain filterChain) throws ServletException, IOException {
 
 		try {
-			if (request.getServletPath().contains("/api/user/**")) {
-				filterChain.doFilter(request, response);
-				return;
-			}
 			if (request.getServletPath().contains("/api/admin/**")) {
 				filterChain.doFilter(request, response);
 				return;
@@ -73,25 +67,8 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 					SecurityContextHolder.getContext().setAuthentication(authToken);
 				}
 			}
+			filterChain.doFilter(request, response);
 
-
-			LoggingHttpServletRequestWrapper requestWrapper = new LoggingHttpServletRequestWrapper(request);
-
-			// Log the incoming request URL, headers, and body
-			String requestBody = requestWrapper.getCapturedRequestBody();
-
-			// Continue the filter chain
-			ResponseWrapper responseWrapper = new ResponseWrapper(response);
-
-			// Continue the filter chain with the response wrapper
-			filterChain.doFilter(requestWrapper, responseWrapper);
-
-			logger.info("Request URL: {} {}\nHeaders: {}\nBody: {}", request.getMethod(), request.getRequestURI(), LoggingHttpServletRequestWrapper.formatHeaders(LoggingHttpServletRequestWrapper.getHeadersInfo(request)), requestBody);
-
-			// Log the outgoing response along with the response body
-			String responseBody = responseWrapper.getCapturedResponse();
-			//logger.info("Response body: {}\n", responseBody);
-			response.getWriter().write(responseBody);
 
 		}catch (ExpiredJwtException e) {
 			response.setStatus(HttpStatus.UNAUTHORIZED.value());
