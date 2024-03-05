@@ -13,7 +13,6 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
 
-    Optional<UserEntity> findByEmail(String email);
     Optional<UserEntity> findByName(String userName);
 
     @Query("SELECT u FROM UserEntity u WHERE LOWER(u.name) LIKE LOWER(concat('%', :searchString, '%')) " +

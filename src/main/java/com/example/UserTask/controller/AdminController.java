@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(ApiConstants.ADMIN)
-@RequiredArgsConstructor
 @Tag(name = StringConstants.ADMIN, description = StringConstants.A_DESCRIPTION)
 public class AdminController {
     @Autowired
